@@ -8,7 +8,7 @@ const getRandomHexColor = () =>
 
 const Statistics = ({ title, stats }) => (
   <section className={styles.statistics}>
-    <h2 className={styles.title}>{title}</h2>
+    {title && <title className={styles.title}>{title}</title>}
 
     <ul className={styles.list}>
       {stats.map(stat => (
